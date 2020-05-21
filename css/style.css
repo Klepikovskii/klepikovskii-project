@@ -326,10 +326,13 @@ template {
   .button--primary {
     background-color: #E3B873;
     color: #ffffff; }
+  .button--primary2 {
+    padding: 19px 26px; }
   .button--outline {
     border: 1px solid #ffffff;
     background-color: transparent;
-    color: #ffffff; }
+    color: #ffffff;
+    padding: 19px 26px; }
 
 .container {
   width: 85%;
