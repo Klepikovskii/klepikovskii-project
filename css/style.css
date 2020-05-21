@@ -402,7 +402,9 @@ template {
     background-color: #131313;
     text-transform: uppercase;
     color: #ffffff;
-    text-decoration: none; }
+    text-decoration: none;
+    font-family: Yeseva One;
+    font-size: 12px; }
 
 .instagram {
   background-color: #131313;
