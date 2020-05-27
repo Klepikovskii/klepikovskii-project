@@ -361,16 +361,17 @@ body {
 .section-title {
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Yeseva One', cursive;
-  font-size: 20px; }
+  font-family: 'Yeseva One', cursive; }
+  .section-title__heading {
+    font-size: 1.42rem; }
   .section-title__image::before, .section-title__image::after {
     content: '';
     display: inline-block;
-    vertical-align: 50%;
+    vertical-align: 90%;
     width: 32px;
     height: 2px;
     background-color: #E3B873;
-    margin: 0 10px; }
+    margin: 0 3px; }
 
 .header {
   position: fixed;
@@ -527,17 +528,24 @@ body {
   .contacts__button {
     display: none; }
   .title {
-    font-size: 1.64rem; }
-  .hero__content {
-    max-width: 22.86rem;
-    margin: auto; }
+    font-size: 1.8rem;
+    max-width: 90%;
+    line-height: 1.5;
+    margin-bottom: 0.6rem; }
+  .container {
+    min-width: 90%; }
   .hero__text {
-    font-size: 1.29rem;
-    margin-bottom: 2.28rem; }
+    font-size: 1.4rem;
+    margin: 0;
+    margin-bottom: 2.7rem;
+    max-width: 89%;
+    line-height: 1.5; }
   .hero__button {
     display: block;
-    min-width: 22.86rem;
-    margin-bottom: 1.85rem; }
+    min-width: 100%;
+    margin: 0;
+    margin-bottom: 2rem;
+    padding: 1.6rem 5rem; }
   .hero__scroll-down {
     display: none; } }
 
