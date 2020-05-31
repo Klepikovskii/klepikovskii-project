@@ -552,7 +552,8 @@ img {
   left: 0;
   bottom: -1.3rem;
   font-size: 1.29rem;
-  padding: 1.214rem 2.7rem;
+  padding: 1.214rem 0.3rem 1.214rem 2.35rem;
+  min-width: 69%;
   font-family: 'Yeseva One', cursive;
   font-style: normal;
   font-weight: normal;
@@ -563,20 +564,19 @@ img {
 .design {
   margin-top: 100px; }
   .design__section-title {
-    margin-bottom: 3rem; }
+    margin-bottom: 3.5rem; }
   .design__text {
-    margin: 0; }
-  .design--pricetag {
-    padding: 1.214rem 5.5rem 1.214rem 2.35rem; }
+    margin: 0;
+    letter-spacing: 0.004rem; }
 
 .section-title__text {
   display: inline-block;
-  font-family: FuturaBookC;
+  font-family: 'Futura Book';
   font-size: 1.42rem;
-  line-height: 1.29rem;
+  line-height: 1.9rem;
   text-transform: none;
   max-width: 733px;
-  margin-top: 2.27rem; }
+  margin-top: 1rem; }
 
 @media screen and (max-width: 1250px) {
   html {
@@ -608,8 +608,9 @@ img {
     margin-top: -11.9rem;
     max-width: 22.2rem; }
   .card__pricetag {
-    max-width: 73%;
-    padding: 0.9rem 2.4rem; }
+    min-width: 71%;
+    padding: 0.9rem 0.4rem;
+    text-align: center; }
   .card__list {
     padding: 0 0 0 1.6rem;
     margin-bottom: 2rem; }
@@ -621,7 +622,16 @@ img {
       margin-bottom: 4.29rem; }
     .design__section-title {
       color: #ffffff;
-      padding-top: 12.35rem; } }
+      padding-top: 13rem;
+      margin-bottom: 3rem; }
+  .section-title__text {
+    font-family: 'Futura Book';
+    font-size: 1.25rem;
+    max-width: 306px;
+    margin-top: 0.9rem;
+    line-height: 1.8rem; }
+  .mobile-item_disabled {
+    display: none; } }
 
 @media screen and (max-width: 576px) {
   .contacts__phone {
