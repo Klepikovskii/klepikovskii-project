@@ -368,13 +368,15 @@ template {
 
 .policy__checkbox {
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  height: 0; }
   .policy__checkbox:checked + .policy__label::before {
     background: #E3B873 url("../img/check.svg") no-repeat center/0.8rem; }
 
 .policy__label {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  font-size: 1.142rem; }
   .policy__label::before {
     content: '';
     width: 18px;
@@ -652,18 +654,21 @@ img {
     font-size: 1.357rem;
     text-align: center;
     margin: 0;
-    margin-bottom: 2.428rem; }
+    margin-bottom: 2rem;
+    line-height: 1.9rem; }
   .modal__form {
     display: flex;
     flex-direction: column; }
   .modal__input {
-    margin-bottom: 3.428rem; }
+    margin-bottom: 3.3rem; }
     .modal__input:last-of-type {
       margin-bottom: 0; }
   .modal__policy {
-    margin-bottom: 2.78rem; }
+    margin-bottom: 2.7rem; }
   .modal__button {
-    align-self: flex-end; }
+    align-self: flex-end;
+    padding: 1.35rem;
+    min-width: 52%; }
 
 @media screen and (max-width: 1250px) {
   html {
