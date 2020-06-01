@@ -773,7 +773,7 @@ img {
   .hero__scroll-down {
     display: none; } }
 
-@media screen and (min-width: 321px) and (max-width: 568px) {
+@media screen and (orientation: landscape) and (min-width: 321px) and (max-width: 568px) {
   .modal__input {
     margin-bottom: 0.5rem; }
   .modal__policy {
@@ -794,7 +794,7 @@ img {
   .hero__text {
     margin-bottom: 1.5rem; } }
 
-@media screen and (min-width: 376px) and (max-width: 812px) {
+@media screen and (orientation: landscape) and (min-width: 376px) and (max-width: 812px) {
   .modal__input {
     margin-bottom: 1rem; }
   .modal__policy {
