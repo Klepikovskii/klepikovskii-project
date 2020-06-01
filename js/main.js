@@ -13,9 +13,12 @@ document.addEventListener("DOMContentLoaded", function(event){
   closeBtn.addEventListener('click', switchModal);
 
   document.addEventListener('spase', switchModal);
+
+  // document.addEventListener('click', function(event) {
+  //   var e=document.getElementsByClassName('modal');
+  //   if (!e.contains(event.target)) switchModal;
+  // });
   
-  // if () {
-  //   console.log('окно окрыто')
-  // }
+  
 
 });
