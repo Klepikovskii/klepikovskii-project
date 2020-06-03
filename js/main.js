@@ -18,10 +18,8 @@ document.addEventListener("DOMContentLoaded", function(event){
       modal.classList.toggle('modal--visible');
     };
   };
-
-  document.addEventListener('keypress', (event) => {
-    
-    if (event.code == 'Space') {      
+  document.addEventListener('keydown', (event) => { 
+      if (event.code == 'Escape') {      
       modal.classList.toggle('modal--visible');
     };
   });
