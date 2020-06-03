@@ -1,4 +1,4 @@
-/*
+
 document.addEventListener("DOMContentLoaded", function(event){
   const modal = document.querySelector('.modal');
   const modalBtn = document.querySelectorAll('[data-toggle=modal]');
@@ -13,6 +13,21 @@ document.addEventListener("DOMContentLoaded", function(event){
 
   closeBtn.addEventListener('click', switchModal);
 
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.classList.toggle('modal--visible');
+    };
+  };
+
+  document.addEventListener('keypress', (event) => {
+    
+    if (event.code == 'Space') {      
+      modal.classList.toggle('modal--visible');
+    };
+  });
+
+  
+
   
 
   // document.addEventListener('click', function(event) {
@@ -23,8 +38,8 @@ document.addEventListener("DOMContentLoaded", function(event){
   
 
 });
-*/
 
+/*
 $(document).ready(function () {
   var modal = $('.modal'),
       modalBtn = $('[data-toggle=modal]'),
@@ -35,7 +50,10 @@ $(document).ready(function () {
   });
   closeBtn.on('click', function () {
     modal.toggleClass('modal--visible');
+  });
+  $('').click(function(){
+    modal.toggleClass('modal--visible');
   });   
 });
 
-
+*/
