@@ -1,4 +1,4 @@
-
+/*
 document.addEventListener("DOMContentLoaded", function(event){
   const modal = document.querySelector('.modal');
   const modalBtn = document.querySelectorAll('[data-toggle=modal]');
@@ -36,8 +36,8 @@ document.addEventListener("DOMContentLoaded", function(event){
   
 
 });
+*/
 
-/*
 $(document).ready(function () {
   var modal = $('.modal'),
       modalBtn = $('[data-toggle=modal]'),
@@ -51,7 +51,15 @@ $(document).ready(function () {
   });
   $('').click(function(){
     modal.toggleClass('modal--visible');
-  });   
+  });
+  
+  var mySwiper = new Swiper ('.swiper-container', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+  })
 });
 
-*/
+
