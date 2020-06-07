@@ -109,13 +109,20 @@
       min-width: 100%
       right: unset
       left: 50%
-      bottom: 0px                
+      bottom: 0px                    
       transform: translate(-50%) rotate(180deg)
-      background-color: $dark                   
+      background-color: $dark
+      padding: 10px                   
       &:after
-        border: none
-        padding: 48% 
-        opacity: 1         
+        border: none               
+        opacity: 1
+        position: absolute
+        right: unset        
+        left: 50%         
+        transform: translate(-50%)
+        bottom: 5px
+        
+               
             
                  
         
@@ -164,9 +171,7 @@
       color: $dark
       margin-bottom: 0
     &__title
-      margin-bottom: 1rem 
-
-            
+      margin-bottom: 1rem             
   .hero
     &__button  
       margin-bottom: 5rem
@@ -177,24 +182,39 @@
     
   #button           
     &-up
-      min-width: 100%
+      min-width: 100%      
       right: unset
       left: 50%
       bottom: 0px                
       transform: translate(-50%) rotate(180deg)
-      background-color: $dark                   
+      background-color: $dark
+      padding: 10px                      
       &:after
-        border: none
-        padding: 50% 
-        opacity: 1      
-@media screen and (orientation:landscape) and (min-width: 577px) and (max-width: 812px)
-  .hero  
-    &__text      
-      margin-bottom: 0rem 
-    &__title
-      margin-bottom: 0rem 
-@media screen and (orientation:landscape) and (min-width: 823px) and (max-width: 823px)     
+        border: none               
+        opacity: 1
+        position: absolute
+        right: unset
+        left: 50%
+        transform: translate(-50%)
+        bottom: 5px
          
+@media screen and (orientation:landscape) and (min-width: 611px) and (max-width: 812px)
+  .modal
+    &__input
+      margin-bottom: 0.5rem    
+  .title    
+    font-size: 2rem  
+@media screen and (orientation:landscape) and (min-width: 577px) and (max-width: 823px)     
+  .modal
+    &__input
+      margin-bottom: 0.5rem    
+  .title    
+    font-size: 1.8rem
+    margin-bottom: 1rem
+  .hero  
+    &__text
+      font-size: 1.2rem
+      margin-bottom: 1rem        
   
 
   

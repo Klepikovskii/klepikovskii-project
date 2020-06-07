@@ -872,11 +872,16 @@ img {
     left: 50%;
     bottom: 0px;
     transform: translate(-50%) rotate(180deg);
-    background-color: #131313; }
+    background-color: #131313;
+    padding: 10px; }
     #button-up:after {
       border: none;
-      padding: 48%;
-      opacity: 1; } }
+      opacity: 1;
+      position: absolute;
+      right: unset;
+      left: 50%;
+      transform: translate(-50%);
+      bottom: 5px; } }
 
 @media screen and (max-height: 530px) {
   .hero__scroll-down {
@@ -931,14 +936,29 @@ img {
     left: 50%;
     bottom: 0px;
     transform: translate(-50%) rotate(180deg);
-    background-color: #131313; }
+    background-color: #131313;
+    padding: 10px; }
     #button-up:after {
       border: none;
-      padding: 50%;
-      opacity: 1; } }
+      opacity: 1;
+      position: absolute;
+      right: unset;
+      left: 50%;
+      transform: translate(-50%);
+      bottom: 5px; } }
 
-@media screen and (orientation: landscape) and (min-width: 577px) and (max-width: 812px) {
+@media screen and (orientation: landscape) and (min-width: 611px) and (max-width: 812px) {
+  .modal__input {
+    margin-bottom: 0.5rem; }
+  .title {
+    font-size: 2rem; } }
+
+@media screen and (orientation: landscape) and (min-width: 577px) and (max-width: 823px) {
+  .modal__input {
+    margin-bottom: 0.5rem; }
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem; }
   .hero__text {
-    margin-bottom: 0rem; }
-  .hero__title {
-    margin-bottom: 0rem; } }
+    font-size: 1.2rem;
+    margin-bottom: 1rem; } }
