@@ -104,6 +104,10 @@
         font-size: 1.9rem
         margin-bottom: 1.7rem
         letter-spacing: -0.03rem
+  #button     
+      &-up
+        right: 45%
+        bottom: 10px      
         
           
 
@@ -111,6 +115,7 @@
   .hero
     &__scroll-down
       display: none
+
 
 @media screen and (orientation:landscape) and (min-width: 321px) and (max-width: 568px)
   .modal
@@ -127,14 +132,17 @@
     &__dialog
       padding: 2rem 3.5rem 1.5rem
       max-width: 30rem
-  .hero
+  .hero 
+    padding-top: 40px   
     &__button
       display: inline-block
       min-width: 45%
       padding: 1.6rem 2rem
-      margin-bottom: 4rem
+      margin-bottom: 1rem
     &__text      
-      margin-bottom: 1.5rem   
+      margin-bottom: 0.5rem  
+    &__title
+      margin-bottom: 0  
 @media screen and (orientation:landscape) and (min-width: 376px) and (max-width: 812px)      
     .modal
       &__input
@@ -146,10 +154,16 @@
         margin-bottom: 0
       &__title
         margin-bottom: 1rem
+    
+
              
     .hero
       &__button  
-        margin-bottom: 2rem  
+        margin-bottom: 5rem
+      &__text      
+        margin-bottom: 1rem 
+      &__title
+        margin-bottom: 0 
 
         
 
