@@ -394,21 +394,18 @@ template {
   bottom: 100px;
   color: #000;
   transition: 0.3s;
-  z-index: 299; }
+  z-index: 299;
+  border: 2px solid #E3B873;
+  border-radius: 50%;
+  background: url("../img/arrow-down.svg") no-repeat center;
+  width: 29px;
+  height: 29px;
+  transform: rotate(180deg); }
   #button-up:hover {
     cursor: pointer;
     opacity: 1;
     transition: 0.3s;
     color: #E3B873; }
-
-.button-up__image {
-  transform: rotate(180deg);
-  border-radius: 30%;
-  vertical-align: middle; }
-
-.button-up__text {
-  text-transform: uppercase;
-  vertical-align: middle; }
 
 .container {
   width: 85%;
@@ -871,8 +868,11 @@ img {
     margin-bottom: 1.7rem;
     letter-spacing: -0.03rem; }
   #button-up {
-    right: 45%;
-    bottom: 10px; } }
+    border: none;
+    right: unset;
+    left: 50%;
+    bottom: 5px;
+    transform: translate(-50%) rotate(180deg); } }
 
 @media screen and (max-height: 530px) {
   .hero__scroll-down {
@@ -920,4 +920,10 @@ img {
   .hero__text {
     margin-bottom: 1rem; }
   .hero__title {
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+  #button-up {
+    border: none;
+    right: unset;
+    left: 50%;
+    bottom: 5px;
+    transform: translate(-50%) rotate(180deg); } }
