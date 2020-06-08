@@ -42,6 +42,7 @@ $(document).ready(function () {
   var modal = $('.modal'),
       modalBtn = $('[data-toggle=modal]'),
       closeBtn = $('.modal__close');
+      
 
   modalBtn.on('click', function () {
     modal.toggleClass('modal--visible');
@@ -52,6 +53,20 @@ $(document).ready(function () {
   $('').click(function(){
     modal.toggleClass('modal--visible');
   });
+
+  $(window).on('click', function (e) {
+    if (modal.is(e.target)) {
+      modal.toggleClass('modal--visible');
+    };
+  });
+
+  $(document).on('keydown', function (e) {
+    if (code = 'Escape' && modal.hasClass('modal--visible')) {
+      modal.toggleClass('modal--visible');                              
+    };     
+  });
+
+
   
   var mySwiper = new Swiper ('.swiper-container', {
     loop: true,
