@@ -417,11 +417,14 @@ template {
   justify-content: space-between; }
 
 .col-30 {
-  flex-basis: 30%; }
+  flex-basis: 32%; }
 
 .col-50 {
-  width: 50%;
+  width: 40%;
   padding-bottom: 3rem; }
+  .col-50__right {
+    width: 60%;
+    padding: 0; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -452,7 +455,10 @@ img {
     .section-title__heading--primary {
       color: #E3B873;
       line-height: 138.6%;
-      font-size: 1.92rem; }
+      font-size: 1.92rem;
+      letter-spacing: -0.13rem;
+      margin: 0;
+      margin-bottom: 1.58rem; }
   .section-title__word {
     display: flex;
     align-items: center; }
@@ -461,11 +467,12 @@ img {
       width: 90px;
       height: 1px;
       background-color: #E3B873;
-      margin-left: 2rem; }
+      margin-left: 2.5rem; }
   .section-title__text {
     font-size: 1.28rem;
     line-height: 2.07rem;
-    max-width: 31.57rem; }
+    max-width: 31.57rem;
+    margin-bottom: 3.4rem; }
   .section-title__image::before, .section-title__image::after {
     content: '';
     display: inline-block;
@@ -573,7 +580,7 @@ img {
     text-transform: uppercase;
     color: #ffffff;
     text-decoration: none;
-    font-family: 'Yeseva One' cursive;
+    font-family: 'Yeseva One', cursive;
     font-size: 12px;
     font-weight: lighter; }
     .hero__scroll-down::after {
@@ -736,8 +743,18 @@ img {
   flex-wrap: wrap; }
   .swiper-slide__text {
     flex-basis: 50%;
-    margin-bottom: 2.42rem;
-    padding-bottom: 2rem; }
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    max-width: 12rem;
+    margin-right: 1.5rem; }
+    .swiper-slide__text--right {
+      margin-right: 6rem; }
+    .swiper-slide__text--bottom {
+      margin-bottom: 6.5rem; }
+  .swiper-slide__value {
+    display: inline-block;
+    max-width: 7.07rem;
+    line-height: 1.5rem; }
   .swiper-slide__heading {
     font-size: 1.285rem;
     line-height: 1.78rem;
@@ -745,10 +762,15 @@ img {
     font-weight: lighter;
     color: #E3B873;
     text-transform: uppercase;
-    margin-bottom: 0.64rem; }
+    margin: 0;
+    margin-bottom: 0.48rem;
+    margin-right: 1rem; }
 
 .swiper-pagination-bullet {
-  background-color: rgba(255, 255, 255, 0.3); }
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-right: 1.1rem !important;
+  width: 9px !important;
+  height: 9px !important; }
   .swiper-pagination-bullet-active {
     background-color: #ffffff; }
 
