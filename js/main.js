@@ -72,13 +72,24 @@ $(document).ready(function () {
     loop: true,
     pagination: {
       el: '.swiper-pagination',
-      type: 'bullets',
+      type: 'bullets',      
     },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    spaceBetween: -1
+    
   })
+
+  var swiper = new Swiper('.swiper-container', {
+    //...
+    renderFraction: function (currentClass, totalClass) {
+        return '<span class="' + currentClass + '"></span>' +
+                ' of ' +
+                '<span class="' + totalClass + '"></span>';
+    }
+  });
 
   var next = $('.swiper-button-next');
   var prev = $('.swiper-button-prev');

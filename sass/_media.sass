@@ -1,3 +1,11 @@
+@media screen and ( max-width: 1297px )
+  .swiper
+    &-slide
+      &__text
+        &--right
+          margin-right: 5rem 
+       
+
 @media screen and ( max-width: 1250px )
   html
     font-size: 12px
@@ -8,7 +16,17 @@
   .card  
     &__text
       margin: auto
-      margin-top: -9.3rem     
+      margin-top: -9.3rem
+  .swiper
+    &-slide
+      &__text
+        &--right
+          margin-right: 2rem
+         
+  .section
+    &-title
+      &__text
+        font-size: 1.15rem                  
 @media screen and ( max-width: 992px )
   .nav
     display: none
@@ -16,7 +34,21 @@
     &__instagram
       display: none
     &__content
-      margin-left: 0  
+      margin-left: 0
+  .swiper
+    &-slide
+      &__heading
+        font-size: 1.04rem
+      &__text
+        margin-right: 0
+        flex-basis: 45%          
+        &--right
+          margin-right: 0 
+  .section
+    &-title
+      &__text
+        font-size: 1.1rem
+
 
 @media screen and ( max-width: 760px )
   .row
@@ -58,6 +90,32 @@
       max-width: 306px
       margin-top: 0.9rem
       line-height: 1.8rem 
+  
+        
+  .col
+    &-50
+      width: 60%
+      padding-bottom: 2rem
+      &__right
+        width: 60%
+        padding: 0
+        margin-left: 0
+        margin-bottom: 3.6rem
+  .swiper
+    &-slide
+      &__heading
+        font-size: 1rem
+  .swiper
+    &-slide
+      &__heading
+        font-size: 1.04rem
+      &__text
+        margin-right: 0
+        flex-basis: 45%          
+        &--right
+          margin-right: 0             
+              
+   
   
                       
 
@@ -121,6 +179,57 @@
         left: 50%         
         transform: translate(-50%)
         bottom: 5px
+  
+    
+  .col
+    &-50
+      width: 100%
+      padding-bottom: 3rem
+      &__right
+        width: 100%
+  .section
+    &-title
+      &__heading
+        &--primary
+          margin-bottom: 1.9rem
+          letter-spacing: -0.2rem
+      &__word
+        &::after
+          display: none    
+      &__text
+        font-size: 1.1rem
+        line-height: 1.9rem
+        letter-spacing: 
+        max-width: 23rem
+        margin: 0
+        margin-bottom: 3.1rem
+        
+        
+  .swiper
+    &-slide
+      &__value
+        font-size: 
+      &__heading
+        font-size: 1.1rem
+        margin-bottom: 0.7rem
+      &__text
+        margin-right: 2rem
+        flex-basis: 45% 
+        margin-bottom: 3rem         
+        &--right
+          margin-right: 3rem 
+        &--bottom
+          margin-bottom: 4.1rem   
+  .hero
+    &::after
+      height: 3rem                  
+@media screen and ( max-width: 382px )    
+  .swiper
+    &-slide      
+      &__text
+        margin-right: 0.2rem
+                 
+                
         
                
             
