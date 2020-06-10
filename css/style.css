@@ -817,9 +817,11 @@ img {
   margin: 0;
   line-height: 1.64rem; }
 
-@media screen and (max-width: 1297px) {
+@media screen and (max-width: 1313px) {
   .swiper-slide__text--right {
-    margin-right: 5rem; } }
+    margin-right: 4rem; }
+  .nav__item {
+    margin-right: 1rem; } }
 
 @media screen and (max-width: 1250px) {
   html {
