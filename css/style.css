@@ -855,6 +855,10 @@ img {
   .section-title__text {
     font-size: 1.1rem; } }
 
+@media screen and (max-width: 780px) {
+  .swiper-slide__heading {
+    margin-right: 0; } }
+
 @media screen and (max-width: 760px) {
   .row {
     flex-direction: column;
