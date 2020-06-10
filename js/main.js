@@ -79,10 +79,9 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    spaceBetween: 1
+    spaceBetween: 1   
     
-    
-  })
+  });
 
   
 
