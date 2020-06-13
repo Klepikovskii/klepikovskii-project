@@ -92,6 +92,8 @@ $(document).ready(function () {
   next.css('left', prev.width() + 25 + bullets.width() + 10 )
   bullets.css('left', prev.width() + 25 )
 
+  new WOW().init();
+
   var button = $('#button-up');	
   $(window).scroll (function () {
     if ($(this).scrollTop () > 300) {
@@ -105,7 +107,9 @@ $(document).ready(function () {
     scrollTop: 0
     }, 800);
     return false;
-  });  
+  }); 
+  
+  
 
 });
 

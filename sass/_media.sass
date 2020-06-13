@@ -89,17 +89,14 @@
       color: $light 
       padding-top: 13rem
       margin-bottom: 3rem
-    &__text
-      
+    &__text      
   .section-title     
     &__text
       font-family: 'Futura Book'
       font-size: 1.25rem
       max-width: 306px
       margin-top: 0.9rem
-      line-height: 1.8rem 
-  
-        
+      line-height: 1.8rem        
   .col
     &-50
       width: 60%
@@ -187,14 +184,14 @@
         left: 50%         
         transform: translate(-50%)
         bottom: 5px
-  
-    
+
   .col
     &-50
       width: 100%
       padding-bottom: 3rem
       &__right
         width: 100%
+
   .section
     &-title
       &__heading
@@ -210,8 +207,7 @@
         letter-spacing: 
         max-width: 23rem
         margin: 0
-        margin-bottom: 3.1rem
-        
+        margin-bottom: 3.1rem        
         
   .swiper
     &-slide
@@ -230,13 +226,82 @@
           margin-bottom: 4.1rem   
   .hero
     &::after
-      height: 3rem                  
-@media screen and ( max-width: 382px )    
+      height: 3rem   
+
+  .control
+    &__input-group
+      flex-basis: 100% 
+      margin-bottom: 4.5rem
+      order: 1
+    &__button
+      min-width: 100% 
+      margin-top: 4.46rem
+      order: 3      
+    &__policy
+      order: 2 
+      margin-top: -1.87rem    
+    &__text
+      font-size: 1.3rem
+      line-height: 2.4rem
+  .video  
+    &__play      
+      max-width: 6rem
+  .types
+    padding-top: 1rem    
+       
+
+                             
+@media screen and ( max-width: 405px )    
   .swiper
     &-slide      
       &__text
         margin-right: 0.2rem
-                 
+@media screen and ( max-width: 394px ) 
+  .control
+    &__text
+      font-size: 1.15rem
+      line-height: 2rem
+      margin-bottom: 2.5rem 
+      &::before
+        margin-bottom: 1.1rem
+    &__video
+      margin-bottom: 2.5rem
+      margin-top: 3rem
+      min-height: 17.4rem
+      min-width: 100%
+      background: $dark url('../img/video-mask-min.jpg') center no-repeat
+      
+    &__input
+      font-size: 1.5rem
+      padding-top: 0
+    &__label
+      font-size: 1.2rem
+      margin-bottom: 0.003rem  
+    &__policy   
+      &-label
+        justify-content: start
+        font-size: 1.4rem
+    &__input-group       
+      margin-bottom: 5.4rem
+      &--down
+        margin-bottom: 3.1rem
+    &__button
+      min-width: 100% 
+      margin-top: 5.1rem 
+      font-size: 1.2rem        
+      letter-spacing: 0.09rem 
+      min-height: 4.2rem
+  .video  
+    &__play
+      max-width: 5.5rem 
+           
+      
+
+         
+
+
+
+          
                 
         
                
