@@ -258,6 +258,8 @@
         margin-right: 0.2rem
 @media screen and ( max-width: 394px ) 
   .control
+    &__section-title
+      
     &__text
       font-size: 1.15rem
       line-height: 2rem
@@ -270,7 +272,9 @@
       min-height: 17.4rem
       min-width: 100%
       background: $dark url('../img/video-mask-min.jpg') center no-repeat
-      
+    &--dark
+      background-color: $dark
+      color: $light           
     &__input
       font-size: 1.5rem
       padding-top: 0
@@ -287,13 +291,27 @@
         margin-bottom: 3.1rem
     &__button
       min-width: 100% 
-      margin-top: 5.1rem 
+      margin-top: 5.1rem
+      margin-bottom: -2rem
       font-size: 1.2rem        
       letter-spacing: 0.09rem 
       min-height: 4.2rem
   .video  
     &__play
       max-width: 5.5rem 
+  .types
+    padding-top: 5.2rem 
+  .col-50__right
+    margin-bottom: 0 
+    padding-bottom: 1.5rem
+  .section
+    &--dark
+      padding-top: 0
+  .hero
+    &::after
+      height: 2.9rem
+          
+
            
       
 

@@ -1106,6 +1106,9 @@ img {
     min-height: 17.4rem;
     min-width: 100%;
     background: #131313 url("../img/video-mask-min.jpg") center no-repeat; }
+  .control--dark {
+    background-color: #131313;
+    color: #ffffff; }
   .control__input {
     font-size: 1.5rem;
     padding-top: 0; }
@@ -1122,11 +1125,21 @@ img {
   .control__button {
     min-width: 100%;
     margin-top: 5.1rem;
+    margin-bottom: -2rem;
     font-size: 1.2rem;
     letter-spacing: 0.09rem;
     min-height: 4.2rem; }
   .video__play {
-    max-width: 5.5rem; } }
+    max-width: 5.5rem; }
+  .types {
+    padding-top: 5.2rem; }
+  .col-50__right {
+    margin-bottom: 0;
+    padding-bottom: 1.5rem; }
+  .section--dark {
+    padding-top: 0; }
+  .hero::after {
+    height: 2.9rem; } }
 
 @media screen and (max-height: 530px) {
   .hero__scroll-down {
