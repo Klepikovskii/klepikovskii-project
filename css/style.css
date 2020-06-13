@@ -353,18 +353,20 @@ template {
   border: none;
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
   font-size: 1.285rem;
-  color: #ffffff;
+  color: #131313;
   padding: 0.5rem 0; }
-  .input--light::-webkit-input-placeholder {
+  .input--light {
     color: #ffffff; }
-  .input--light::-moz-placeholder {
-    color: #ffffff; }
-  .input--light:-ms-input-placeholder {
-    color: #ffffff; }
-  .input--light::-ms-input-placeholder {
-    color: #ffffff; }
-  .input--light::placeholder {
-    color: #ffffff; }
+    .input--light::-webkit-input-placeholder {
+      color: #ffffff; }
+    .input--light::-moz-placeholder {
+      color: #ffffff; }
+    .input--light:-ms-input-placeholder {
+      color: #ffffff; }
+    .input--light::-ms-input-placeholder {
+      color: #ffffff; }
+    .input--light::placeholder {
+      color: #ffffff; }
 
 .policy__checkbox {
   opacity: 0;
@@ -1139,7 +1141,10 @@ img {
   .section--dark {
     padding-top: 0; }
   .hero::after {
-    height: 2.9rem; } }
+    height: 2.9rem; }
+  .input {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff; } }
 
 @media screen and (max-height: 530px) {
   .hero__scroll-down {
