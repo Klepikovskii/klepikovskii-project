@@ -236,6 +236,7 @@
     &__button
       min-width: 100% 
       margin-top: 4.46rem
+      margin-bottom: -2rem
       order: 3      
     &__policy
       order: 2 
@@ -243,16 +244,29 @@
     &__text
       font-size: 1.3rem
       line-height: 2.4rem
+    &__label
+      font-size: 1.2rem
+      margin-bottom: 0.003rem
+      color: $secondary
+    &__input
+      border-bottom: 1px solid $light
     &__video
       background: $dark url('../img/video-mask-min.jpg') center no-repeat
       background-size: contain
       min-height: 25rem
-      min-width: 100%  
+      min-width: 100% 
+    &--dark
+      background-color: $dark
+      color: $light   
   .video  
     &__play      
       max-width: 6rem
   .types
-    padding-top: 1rem    
+    padding-top: 5.2rem
+  .input
+    color: $light    
+    &::placeholder
+      color: $light      
        
 
                              
@@ -280,11 +294,10 @@
       color: $light           
     &__input
       font-size: 1.5rem
-      padding-top: 0
+      padding-top: 0      
     &__label
       font-size: 1.2rem
-      margin-bottom: 0.003rem
-      color: $secondary 
+      margin-bottom: 0.003rem       
     &__policy   
       &-label
         justify-content: start
@@ -295,16 +308,13 @@
         margin-bottom: 3.1rem
     &__button
       min-width: 100% 
-      margin-top: 5.1rem
-      margin-bottom: -2rem
+      margin-top: 5.1rem     
       font-size: 1.2rem        
       letter-spacing: 0.09rem 
       min-height: 4.2rem
   .video  
     &__play
-      max-width: 5.5rem 
-  .types
-    padding-top: 5.2rem 
+      max-width: 5.5rem  
   .col-50__right
     margin-bottom: 0 
     padding-bottom: 1.5rem
@@ -314,11 +324,7 @@
   .hero
     &::after
       height: 2.9rem
-  .input
-    color: $light 
-    border-bottom: 1px solid $light
-    &::placeholder
-      color: $light
+  
        
           
 

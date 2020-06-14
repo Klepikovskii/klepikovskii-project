@@ -61,7 +61,7 @@ $(document).ready(function () {
   });
 
   $(document).on('keydown', function (e) {
-    if (code = 'Escape' && modal.hasClass('modal--visible')) {       
+    if (e.code == 'Escape' && modal.hasClass('modal--visible')) {       
       modal.toggleClass('modal--visible');                              
     };    
   });
@@ -112,7 +112,32 @@ $(document).ready(function () {
     }, 800);
     return false;
   }); 
+
+  var block_show = false;
+ 
+  function scrollTracking(){
+    if (block_show) {
+      return false;
+    }
   
+    var wt = $(window).scrollTop();
+    var wh = $(window).height();
+    var et = $('.active').offset().top;
+    var eh = $('.active').outerHeight();
+    var dh = $(document).height();   
+  
+    if (wt + wh >= et || wh + wt == dh || eh + et < wh){
+      block_show = true;
+    }
+  }
+  
+  $(window).scroll(function(){
+    scrollTracking();
+  });
+    
+  $(document).ready(function(){ 
+    scrollTracking();
+  });
   
 
 });

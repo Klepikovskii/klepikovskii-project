@@ -1079,6 +1079,7 @@ img {
   .control__button {
     min-width: 100%;
     margin-top: 4.46rem;
+    margin-bottom: -2rem;
     order: 3; }
   .control__policy {
     order: 2;
@@ -1086,15 +1087,36 @@ img {
   .control__text {
     font-size: 1.3rem;
     line-height: 2.4rem; }
+  .control__label {
+    font-size: 1.2rem;
+    margin-bottom: 0.003rem;
+    color: #959595; }
+  .control__input {
+    border-bottom: 1px solid #ffffff; }
   .control__video {
     background: #131313 url("../img/video-mask-min.jpg") center no-repeat;
     background-size: contain;
     min-height: 25rem;
     min-width: 100%; }
+  .control--dark {
+    background-color: #131313;
+    color: #ffffff; }
   .video__play {
     max-width: 6rem; }
   .types {
-    padding-top: 1rem; } }
+    padding-top: 5.2rem; }
+  .input {
+    color: #ffffff; }
+    .input::-webkit-input-placeholder {
+      color: #ffffff; }
+    .input::-moz-placeholder {
+      color: #ffffff; }
+    .input:-ms-input-placeholder {
+      color: #ffffff; }
+    .input::-ms-input-placeholder {
+      color: #ffffff; }
+    .input::placeholder {
+      color: #ffffff; } }
 
 @media screen and (max-width: 405px) {
   .swiper-slide__text {
@@ -1121,8 +1143,7 @@ img {
     padding-top: 0; }
   .control__label {
     font-size: 1.2rem;
-    margin-bottom: 0.003rem;
-    color: #959595; }
+    margin-bottom: 0.003rem; }
   .control__policy-label {
     justify-content: start;
     font-size: 1.4rem; }
@@ -1133,34 +1154,18 @@ img {
   .control__button {
     min-width: 100%;
     margin-top: 5.1rem;
-    margin-bottom: -2rem;
     font-size: 1.2rem;
     letter-spacing: 0.09rem;
     min-height: 4.2rem; }
   .video__play {
     max-width: 5.5rem; }
-  .types {
-    padding-top: 5.2rem; }
   .col-50__right {
     margin-bottom: 0;
     padding-bottom: 1.5rem; }
   .section--dark {
     padding-top: 0; }
   .hero::after {
-    height: 2.9rem; }
-  .input {
-    color: #ffffff;
-    border-bottom: 1px solid #ffffff; }
-    .input::-webkit-input-placeholder {
-      color: #ffffff; }
-    .input::-moz-placeholder {
-      color: #ffffff; }
-    .input:-ms-input-placeholder {
-      color: #ffffff; }
-    .input::-ms-input-placeholder {
-      color: #ffffff; }
-    .input::placeholder {
-      color: #ffffff; } }
+    height: 2.9rem; } }
 
 @media screen and (max-height: 530px) {
   .hero__scroll-down {
