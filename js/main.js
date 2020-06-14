@@ -61,10 +61,14 @@ $(document).ready(function () {
   });
 
   $(document).on('keydown', function (e) {
-    if (code = 'Escape' && modal.hasClass('modal--visible')) {
+    if (code = 'Escape' && modal.hasClass('modal--visible')) {       
       modal.toggleClass('modal--visible');                              
-    };     
+    };    
   });
+
+  // $(document).keyup(function(e) {
+  //   console.log(e);
+  // });
 
 
   

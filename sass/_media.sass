@@ -243,6 +243,11 @@
     &__text
       font-size: 1.3rem
       line-height: 2.4rem
+    &__video
+      background: $dark url('../img/video-mask-min.jpg') center no-repeat
+      background-size: contain
+      min-height: 25rem
+      min-width: 100%  
   .video  
     &__play      
       max-width: 6rem
@@ -270,8 +275,8 @@
       margin-bottom: 2.5rem
       margin-top: 3rem
       min-height: 17.4rem
-      min-width: 100%
-      background: $dark url('../img/video-mask-min.jpg') center no-repeat
+      min-width: 100% 
+      background-size: unset     
     &--dark
       background-color: $dark
       color: $light           
@@ -280,7 +285,8 @@
       padding-top: 0
     &__label
       font-size: 1.2rem
-      margin-bottom: 0.003rem  
+      margin-bottom: 0.003rem
+      color: $secondary 
     &__policy   
       &-label
         justify-content: start
@@ -313,6 +319,8 @@
   .input
     color: $light 
     border-bottom: 1px solid $light
+    &::placeholder
+      color: $light
        
           
 

@@ -1086,6 +1086,11 @@ img {
   .control__text {
     font-size: 1.3rem;
     line-height: 2.4rem; }
+  .control__video {
+    background: #131313 url("../img/video-mask-min.jpg") center no-repeat;
+    background-size: contain;
+    min-height: 25rem;
+    min-width: 100%; }
   .video__play {
     max-width: 6rem; }
   .types {
@@ -1107,7 +1112,7 @@ img {
     margin-top: 3rem;
     min-height: 17.4rem;
     min-width: 100%;
-    background: #131313 url("../img/video-mask-min.jpg") center no-repeat; }
+    background-size: unset; }
   .control--dark {
     background-color: #131313;
     color: #ffffff; }
@@ -1116,7 +1121,8 @@ img {
     padding-top: 0; }
   .control__label {
     font-size: 1.2rem;
-    margin-bottom: 0.003rem; }
+    margin-bottom: 0.003rem;
+    color: #959595; }
   .control__policy-label {
     justify-content: start;
     font-size: 1.4rem; }
@@ -1144,7 +1150,17 @@ img {
     height: 2.9rem; }
   .input {
     color: #ffffff;
-    border-bottom: 1px solid #ffffff; } }
+    border-bottom: 1px solid #ffffff; }
+    .input::-webkit-input-placeholder {
+      color: #ffffff; }
+    .input::-moz-placeholder {
+      color: #ffffff; }
+    .input:-ms-input-placeholder {
+      color: #ffffff; }
+    .input::-ms-input-placeholder {
+      color: #ffffff; }
+    .input::placeholder {
+      color: #ffffff; } }
 
 @media screen and (max-height: 530px) {
   .hero__scroll-down {
