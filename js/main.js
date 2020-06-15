@@ -96,8 +96,12 @@ $(document).ready(function () {
   next.css('left', prev.width() + 25 + bullets.width() + 10 )
   bullets.css('left', prev.width() + 25 )
 
+
+  // инициализация библиотеки wow
   // new WOW().init();
 
+
+  // появление стрелки наверх при прокрутки страницы
   var button = $('#button-up');	
   $(window).scroll (function () {
     if ($(this).scrollTop () > 300) {
@@ -113,6 +117,8 @@ $(document).ready(function () {
     return false;
   }); 
 
+
+  // Запуск анимации при скроллинге "ДОДЕЛАТЬ"
   var block_show = false;
  
   function scrollTracking(){
@@ -139,6 +145,84 @@ $(document).ready(function () {
     scrollTracking();
   });
   
+
+  // Валидация формы
+  $('.modal__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        minlength: 2
+      },
+      userPhone: "required",
+      // правило-объект
+      userEmail: {
+        required: true,
+        email: true
+      }
+    }, // сообщения 
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче двух букв" 
+      }, 
+      userPhone: "Телефон обязателен",
+      userEmail: {
+        required: "Обязательно укажите email",
+        email: "Введите в формате: name@domain.com"
+      }
+    }
+  });
+
+  $('.control__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        minlength: 2
+      },
+      userPhone: "required",      
+    }, // сообщения 
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче двух букв" 
+      }, 
+      userPhone: "Телефон обязателен",      
+    }
+  });
+
+  $('.footer__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        minlength: 2
+      },
+      userPhone: "required",
+      userQuestion: {
+        required: true,
+        minlength: 5
+      },      
+    }, // сообщения 
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче двух букв" 
+      }, 
+      userPhone: "Телефон обязателен",
+      userQuestion: {
+        required: "Заполните поле",
+        minlength: "сообщение не короче пяти букв" 
+      }
+    }
+  });
+
+  // маска для телефона
+  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
 
 });
 

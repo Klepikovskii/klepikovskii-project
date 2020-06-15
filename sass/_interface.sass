@@ -49,8 +49,7 @@
   &__label
     display: flex
     align-items: center
-    font-size: 1.142rem
-    
+    font-size: 1.142rem    
     &::before
       content: ''
       width: 18px
@@ -59,6 +58,10 @@
       border-radius: 1px
       cursor: pointer
       margin-right: 0.64rem
+    &--center
+      justify-content: center
+
+
 #button     
   &-up
     display: none	
@@ -82,7 +85,12 @@
       border: 2px  solid $primary            
       border-radius: 50%
       
-      
+input
+  &.invalid
+    border-bottom: 1px solid red
+label
+  &.invalid
+    color: red          
       
            
     
