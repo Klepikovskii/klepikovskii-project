@@ -849,8 +849,7 @@ img {
   line-height: 1.64rem; }
 
 .steps {
-  padding-bottom: 30rem;
-  background-color: #fff; }
+  padding-bottom: 30rem; }
 
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
@@ -890,6 +889,8 @@ img {
   .footer__policy {
     flex-basis: 100%;
     margin-bottom: 3.6rem; }
+    .footer__policy-label {
+      justify-content: center; }
   .footer__button {
     margin: auto;
     padding: 1.285rem 4.785rem; }
@@ -1175,7 +1176,30 @@ img {
     .input::-ms-input-placeholder {
       color: #ffffff; }
     .input::placeholder {
-      color: #ffffff; } }
+      color: #ffffff; }
+  .footer {
+    background: #131313; }
+    .footer__wrap {
+      padding: 2.5rem 0;
+      max-width: 100%;
+      background-color: #131313; }
+    .footer__title {
+      font-size: 1.65rem;
+      margin-bottom: 4.5rem; }
+    .footer__input {
+      border-bottom: 1px solid #ffffff;
+      font-size: 1.45rem; }
+      .footer__input-group {
+        flex-basis: 100%;
+        margin-bottom: 5.3rem; }
+    .footer__policy-label {
+      justify-content: start;
+      margin-top: -4.4rem;
+      font-size: 1.3rem; }
+    .footer__button {
+      min-width: 100%;
+      min-height: 4.3rem;
+      font-size: 1.2rem; } }
 
 @media screen and (max-width: 405px) {
   .swiper-slide__text {

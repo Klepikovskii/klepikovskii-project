@@ -266,8 +266,32 @@
   .input
     color: $light    
     &::placeholder
-      color: $light      
-       
+      color: $light
+  .footer
+    background: $dark
+    &__wrap
+      padding: 2.5rem 0
+      max-width: 100%
+      background-color: $dark
+    &__title
+      font-size: 1.65rem
+      margin-bottom: 4.5rem  
+    &__input
+      border-bottom: 1px solid $light 
+      font-size: 1.45rem     
+      &-group
+        flex-basis: 100%
+        margin-bottom: 5.3rem 
+    &__policy
+      &-label
+        justify-content: start
+        margin-top: -4.4rem
+        font-size: 1.3rem
+    &__button                 
+       min-width: 100%
+       min-height: 4.3rem
+       font-size: 1.2rem  
+
 
                              
 @media screen and ( max-width: 405px )    
