@@ -429,7 +429,7 @@ label.invalid {
 .col-30 {
   flex-basis: 32%; }
   .col-30--small-width {
-    flex-basis: 21.8%; }
+    display: flex; }
 
 .col-50 {
   width: 40%;
@@ -889,8 +889,13 @@ img {
         border-radius: 30px; }
   .team-text__down {
     text-align: center; }
-  .team-card__image {
+  .team__card {
     position: relative; }
+  .team-card__image {
+    width: 304px; }
+  .team-card__image-wrap {
+    width: 304px;
+    overflow: hidden; }
   .team-card__icon {
     position: absolute;
     left: -2.5rem;
