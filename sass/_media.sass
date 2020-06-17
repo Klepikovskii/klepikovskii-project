@@ -283,8 +283,9 @@
       order: 2 
       margin-top: -1.87rem    
     &__text
-      font-size: 1.3rem
+      font-size: 1rem
       line-height: 2.4rem
+      max-width: 28rem
     &__label
       font-size: 1.2rem
       margin-bottom: 0.003rem
@@ -292,8 +293,8 @@
     &__input
       border-bottom: 1px solid $light
     &__video
-      background: $dark url('../img/video-mask-min.jpg') center no-repeat
-      background-size: contain
+      background: $dark url('../img/video-mask-min.jpg') center/cover no-repeat
+      
       min-height: 25rem
       min-width: 100% 
     &--dark
@@ -348,7 +349,8 @@
     &__text
       font-size: 1.15rem
       line-height: 2rem
-      margin-bottom: 2.5rem 
+      margin-bottom: 2.5rem
+      max-width: 28rem 
       &::before
         margin-bottom: 1.1rem
     &__video
@@ -392,7 +394,13 @@
   .hero
     &::after
       height: 2.9rem
-  
+@media screen and ( max-width: 388px )       
+  .control          
+    &__text
+      font-size: 0.9rem
+      line-height: 2rem
+      margin-bottom: 2.5rem
+      max-width: 22rem 
        
           
 
