@@ -37,21 +37,25 @@
     &__down
       text-align: center         
   &__card
-    position: relative                      
+    position: relative
+
   &-card
     &__image
+      max-width: 304px
       width: 304px
-    &__image-wrap        
-      width: 304px
-      overflow: hidden        
+    &__image-wrap      
+      overflow: hidden
+      width: 272px
+      display: flex
+      justify-content: center      
              
     &__icon
       position: absolute
       left: -2.5rem
       top: -2.5rem
       z-index: 2
-      width: 5rem
-      height: 5rem
+      width: 70px
+      height: 70px
       background: $primary url('../img/team/idea.svg') no-repeat center
       box-shadow: 0px 5px 20px rgba($primary, 0.5)          
     &__text
@@ -59,7 +63,7 @@
       margin: auto             
       margin-top: -6rem         
       padding: 1.7rem 1.7rem 
-      max-width: 16.67rem 
+      max-width: 90% 
       background-color: #fff
       box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03)
     &__title
