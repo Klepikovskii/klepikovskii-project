@@ -222,7 +222,12 @@
   .row
     &__team
       justify-content: space-between            
-   
+  
+  .policy
+    &__checkbox
+      &-control ~ label.invalid
+        left: 17rem
+        top: 2.6rem 
   
                       
 
@@ -340,9 +345,11 @@
       margin-top: 4.46rem
       margin-bottom: -2rem
       order: 3      
-    &__policy
+    &__policy      
       order: 2 
-      margin-top: -1.87rem    
+      margin-top: -1.87rem
+      &-label
+        justify-content: start    
     &__text
       font-size: 1rem
       line-height: 2.4rem
@@ -351,6 +358,7 @@
       font-size: 1.2rem
       margin-bottom: 0.003rem
       color: $secondary
+      
     &__input
       border-bottom: 1px solid $light
     &__video
@@ -396,10 +404,15 @@
        font-size: 1.2rem 
 
   .team
-    padding-bottom: 14.5rem              
-
-
-                             
+    padding-bottom: 14.5rem
+  .policy
+    &__checkbox
+      &-footer ~ label.invalid
+        left: 0
+        top: -1.5rem
+      &-control ~ label.invalid
+        left: 0
+                                     
 @media screen and ( max-width: 405px )    
   .swiper
     &-slide      

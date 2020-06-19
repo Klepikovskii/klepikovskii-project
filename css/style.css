@@ -372,8 +372,20 @@ template {
   opacity: 0;
   visibility: hidden;
   height: 0; }
-  .policy__checkbox:checked + .policy__label::before {
+  .policy__checkbox:checked ~ .policy__label::before {
     background: #E3B873 url("../img/check.svg") no-repeat center/0.8rem; }
+  .policy__checkbox-footer ~ div.invalid {
+    position: absolute;
+    left: 9rem;
+    top: 2.6rem; }
+  .policy__checkbox-control ~ div.invalid {
+    position: absolute;
+    left: 18rem;
+    top: 2.6rem; }
+  .policy__checkbox-modal ~ div.invalid {
+    position: absolute;
+    left: 0;
+    top: 2.7rem; }
 
 .policy__label {
   display: flex;
@@ -413,7 +425,7 @@ template {
 input.invalid {
   border-bottom: 1px solid red; }
 
-label.invalid {
+div.invalid {
   color: red; }
 
 .container {
@@ -763,8 +775,11 @@ img {
   padding: 1.2857rem 4.7857rem; }
 
 .control__policy {
+  position: relative;
   flex-basis: 100%;
-  margin-top: 1.2rem; }
+  margin-top: 1.2rem;
+  justify-content: center;
+  align-items: center; }
   .control__policy-label {
     justify-content: center; }
 
@@ -909,6 +924,12 @@ img {
     height: 70px;
     background: #E3B873 url("../img/team/idea.svg") no-repeat center;
     box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5); }
+    .team-card__icon-1 {
+      background: #E3B873 url("../img/team/idea.svg") no-repeat center; }
+    .team-card__icon-2 {
+      background: #E3B873 url("../img/team/team-icon2.svg") no-repeat center; }
+    .team-card__icon-3 {
+      background: #E3B873 url("../img/team/team-icon3.svg") no-repeat center; }
   .team-card__text {
     position: relative;
     margin: auto;
@@ -984,6 +1005,7 @@ img {
         flex-basis: 100%;
         margin-bottom: 2rem; }
   .footer__policy {
+    position: relative;
     flex-basis: 100%;
     margin-bottom: 3.6rem; }
     .footer__policy-label {
@@ -1045,6 +1067,7 @@ img {
   .modal__input:last-of-type {
     margin-bottom: 0; }
   .modal__policy {
+    position: relative;
     margin-bottom: 2.7rem; }
   .modal__button {
     align-self: flex-end;
@@ -1215,7 +1238,10 @@ img {
       padding-left: 4rem;
       min-height: 3.7rem; }
   .row__team {
-    justify-content: space-between; } }
+    justify-content: space-between; }
+  .policy__checkbox-control ~ label.invalid {
+    left: 17rem;
+    top: 2.6rem; } }
 
 @media screen and (max-width: 576px) {
   .contacts__phone {
@@ -1312,6 +1338,8 @@ img {
   .control__policy {
     order: 2;
     margin-top: -1.87rem; }
+    .control__policy-label {
+      justify-content: start; }
   .control__text {
     font-size: 1rem;
     line-height: 2.4rem;
@@ -1369,7 +1397,12 @@ img {
       min-height: 4.3rem;
       font-size: 1.2rem; }
   .team {
-    padding-bottom: 14.5rem; } }
+    padding-bottom: 14.5rem; }
+  .policy__checkbox-footer ~ label.invalid {
+    left: 0;
+    top: -1.5rem; }
+  .policy__checkbox-control ~ label.invalid {
+    left: 0; } }
 
 @media screen and (max-width: 405px) {
   .swiper-slide__text {

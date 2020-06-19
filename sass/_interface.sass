@@ -42,10 +42,23 @@
     opacity: 0
     visibility: hidden
     height: 0
-    &:checked +
+    &:checked ~
       .policy__label
         &::before
-          background: $primary url('../img/check.svg') no-repeat center / 0.8rem  
+          background: $primary url('../img/check.svg') no-repeat center / 0.8rem
+    &-footer ~ div.invalid
+      position: absolute 
+      left: 9rem
+      top: 2.6rem      
+    &-control ~ div.invalid
+      position: absolute 
+      left: 18rem
+      top: 2.6rem 
+          
+    &-modal ~ div.invalid
+      position: absolute 
+      left: 0
+      top: 2.7rem  
   &__label
     display: flex
     align-items: center
@@ -88,7 +101,7 @@
 input
   &.invalid
     border-bottom: 1px solid red
-label
+div
   &.invalid
     color: red          
       

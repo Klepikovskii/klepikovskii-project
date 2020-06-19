@@ -148,6 +148,7 @@ $(document).ready(function () {
 
   // Валидация формы
   $('.modal__form').validate({
+    errorElement: "div",
     errorClass: "invalid",
     rules: {
       // строчное правило
@@ -156,7 +157,11 @@ $(document).ready(function () {
         minlength: 2,
         maxlength: 15
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 17        
+      },
+      policyCheckbox: "required",
       // правило-объект
       userEmail: {
         required: true,
@@ -169,7 +174,11 @@ $(document).ready(function () {
         minlength: "Имя не короче 2 символов",
         maxlength: "Имя не длиннее 15 символов" 
       }, 
-      userPhone: "Телефон обязателен",
+      userPhone: {
+        required: "Заполните поле",
+        minlength: "Укажите телефон полностью"          
+      },
+      policyCheckbox: "Отметьте поле",
       userEmail: {
         required: "Обязательно укажите email",
         email: "Введите в формате: name@domain.com"
@@ -178,6 +187,7 @@ $(document).ready(function () {
   });
 
   $('.control__form').validate({
+    errorElement: "div",
     errorClass: "invalid",
     rules: {
       // строчное правило
@@ -186,7 +196,11 @@ $(document).ready(function () {
         minlength: 2,
         maxlength: 15
       },
-      userPhone: "required",      
+      userPhone: {
+        required: true,
+        minlength: 17        
+      },
+      policyCheckbox: "required",      
     }, // сообщения 
     messages: {
       userName: {
@@ -194,11 +208,16 @@ $(document).ready(function () {
         minlength: "Имя не короче 2 символов",
         maxlength: "Имя не длиннее 15 символов" 
       }, 
-      userPhone: "Телефон обязателен",      
+      userPhone: {
+        required: "Заполните поле",
+        minlength: "Укажите телефон полностью"          
+      },
+      policyCheckbox: "Отметьте поле"     
     }
   });
 
   $('.footer__form').validate({
+    errorElement: "div",
     errorClass: "invalid",
     rules: {
       // строчное правило
@@ -207,7 +226,11 @@ $(document).ready(function () {
         minlength: 2,
         maxlength: 15
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 17        
+      },
+      policyCheckbox: "required",
       userQuestion: {
         required: true,
         minlength: 5
@@ -219,7 +242,11 @@ $(document).ready(function () {
         minlength: "Имя не короче 2 символов",
         maxlength: "Имя не длиннее 15 символов"  
       }, 
-      userPhone: "Телефон обязателен",
+      userPhone: {
+        required: "Заполните поле",
+        minlength: "Укажите телефон полностью"          
+      },
+      policyCheckbox: "Отметьте поле",
       userQuestion: {
         required: "Заполните поле",
         minlength: "сообщение не короче пяти букв" 
@@ -227,6 +254,7 @@ $(document).ready(function () {
     }
   });
 
+  
   // маска для телефона
   $('[type=tel]').mask('+7(000) 000-00-00');
 
