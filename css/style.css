@@ -1140,6 +1140,8 @@ img {
     padding: 1rem 0.1rem; }
   .team-card__image {
     max-width: 90%; }
+  .team-card__image-wrap {
+    width: unset; }
   .row__team {
     justify-content: center; } }
 
@@ -1226,8 +1228,6 @@ img {
       margin-bottom: 1.8rem; }
     .team-card__image {
       min-width: 304px;
-      width: 304px; }
-    .team-card__image-wrap {
       width: 304px; }
     .team-card__icon {
       left: -2.5rem; }
@@ -1341,7 +1341,7 @@ img {
     .control__policy-label {
       justify-content: start; }
   .control__text {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 2.4rem;
     max-width: 28rem; }
   .control__label {
@@ -1486,10 +1486,8 @@ img {
       padding-left: 4rem;
       min-height: 3.7rem; }
     .team-card__image {
-      min-width: 304px;
       width: 304px; }
     .team-card__image-wrap {
-      min-width: 304px;
       margin-left: 0rem; }
     .team-card__icon {
       left: -3rem;
