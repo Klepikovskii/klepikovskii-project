@@ -127,6 +127,8 @@
 
         
 @media screen and ( max-width: 760px )
+  .steps
+    display: none
   .row
     flex-direction: column
     align-items: center
@@ -188,7 +190,8 @@
         &--right
           margin-right: 0 
   .team
-    background-color: $dark    
+    background-color: $dark  
+    margin-top: -2rem  
     &__card
       margin-bottom: 10.4rem
       max-width: 100%      
@@ -408,10 +411,10 @@
     padding-bottom: 14.5rem
   .policy
     &__checkbox
-      &-footer ~ label.invalid
+      &-footer ~ div.invalid
         left: 0
         top: -1.5rem
-      &-control ~ label.invalid
+      &-control ~ div.invalid
         left: 0
                                      
 @media screen and ( max-width: 405px )    
