@@ -380,7 +380,7 @@ template {
     top: 2.6rem; }
   .policy__checkbox-control ~ div.invalid {
     position: absolute;
-    left: 18rem;
+    left: 0rem;
     top: 2.6rem; }
   .policy__checkbox-modal ~ div.invalid {
     position: absolute;
@@ -776,10 +776,11 @@ img {
 
 .control__policy {
   position: relative;
-  flex-basis: 100%;
+  margin: auto;
   margin-top: 1.2rem;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  display: inline-block; }
   .control__policy-label {
     justify-content: center; }
 
@@ -1498,7 +1499,7 @@ img {
 
 @media screen and (max-width: 388px) {
   .control__text {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 2rem;
     margin-bottom: 2.5rem;
     max-width: 22rem; }
