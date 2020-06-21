@@ -355,6 +355,8 @@ template {
   font-size: 1.285rem;
   color: #131313;
   padding: 0.5rem 0; }
+  .input-group {
+    position: relative; }
   .input--light {
     color: #ffffff; }
     .input--light::-webkit-input-placeholder {
@@ -426,7 +428,12 @@ input.invalid {
   border-bottom: 1px solid red; }
 
 div.invalid {
-  color: red; }
+  color: red;
+  position: absolute;
+  top: 3.6rem;
+  left: 0; }
+  div.invalid-control {
+    top: 3.2rem; }
 
 .container {
   width: 85%;
@@ -1406,7 +1413,9 @@ img {
     left: 0;
     top: -1.5rem; }
   .policy__checkbox-control ~ div.invalid {
-    left: 0; } }
+    left: 0; }
+  div.invalid-control {
+    top: 3.9rem; } }
 
 @media screen and (max-width: 405px) {
   .swiper-slide__text {

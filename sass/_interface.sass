@@ -32,7 +32,9 @@
   border-bottom: 1px solid rgba(54, 54, 54, 0.3)
   font-size: 1.285rem
   color: $dark
-  padding: 0.5rem 0  
+  padding: 0.5rem 0
+  &-group
+    position: relative
   &--light
     color: $light
     &::placeholder
@@ -103,7 +105,12 @@ input
     border-bottom: 1px solid red
 div
   &.invalid
-    color: red          
+    color: red
+    position: absolute
+    top: 3.6rem
+    left: 0
+    &-control
+      top: 3.2rem          
       
            
     

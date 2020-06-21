@@ -98,7 +98,7 @@ $(document).ready(function () {
 
 
   // инициализация библиотеки wow
-  // new WOW().init();
+  new WOW().init();
 
 
   // появление стрелки наверх при прокрутки страницы
@@ -188,7 +188,7 @@ $(document).ready(function () {
 
   $('.control__form').validate({
     errorElement: "div",
-    errorClass: "invalid",
+    errorClass: "invalid invalid-control",
     rules: {
       // строчное правило
       userName: {
