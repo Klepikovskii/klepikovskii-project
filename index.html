@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=88d3822c-3a87-4441-bd9e-aa6d6fe6bd72&lang=ru_RU" type="text/javascript"></script>
   <title>Document</title>
 </head>
 <body> 
@@ -682,10 +683,32 @@
           <button class="button button--primary footer__button">Отправить</button>
         </form>
       </div>
-      <!-- /.footer-wrap --> 
-      <div class="map footer__map">
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa62dcab571906ab44ab68e86931cc199ba7aab750855aec0643cbb9c18104daf&amp;width=100%25&amp;height=465&amp;lang=ru_RU&amp;scroll=false"></script>
-      </div>     
+      <!-- /.footer-wrap -->
+      <div class="footer__wrap-map">
+        <div class="section-title footer__section-title">
+          <h2 class="section-title__heading footer__heading">
+            Ростов на дону, Торговый центр Plaza
+            Прямой телефон           
+              <a href="tel:+79997683299" class="phone contacts__phone footer__contacts-phone">+7 (999) 768-32-99</a>          
+          </h2>
+          <div class="footer__image">
+            <a href="#">
+              <img src="img/mail-icon.svg" alt="mail-icon" class="footer__mail-icon">
+            </a>
+            <a href="#">
+              <img src="img/instagram-icon.svg" alt="instagram-icon" class="footer__instagram-icon">
+            </a>            
+            
+          </div>
+        </div>
+        <div class="map footer__map" id="map">
+          <!-- <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa62dcab571906ab44ab68e86931cc199ba7aab750855aec0643cbb9c18104daf&amp;lang=ru_RU&amp;scroll=false"></script> -->
+        </div> 
+      </div>      
+        
+        <!-- /.footer__section-title --> 
+        
+      </div>         
     </div>
     <!-- /.container -->
     <div class="footer__menu">

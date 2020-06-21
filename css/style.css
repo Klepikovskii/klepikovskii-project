@@ -1034,6 +1034,34 @@ img {
     position: relative;
     background-color: #131313;
     padding: 3.5rem 0; }
+  .footer__map {
+    min-height: 33.21rem;
+    max-width: 73.6%;
+    margin: auto;
+    margin-bottom: 4.7rem;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: 1s; }
+    .footer__map:hover {
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0); }
+  .footer__section-title {
+    position: relative; }
+  .footer__heading {
+    color: #E3B873;
+    max-width: 39rem;
+    margin: auto;
+    line-height: 2rem; }
+  .footer__image {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.7rem;
+    margin-bottom: 2.9rem; }
+  .footer__mail-icon {
+    margin-right: 1.07rem; }
+  .footer__contacts-phone {
+    text-decoration: none;
+    margin: 0; }
 
 .modal {
   opacity: 0;
@@ -1161,7 +1189,9 @@ img {
   .team-card__image-wrap {
     width: unset; }
   .row__team {
-    justify-content: center; } }
+    justify-content: center; }
+  .footer__map {
+    min-height: 21.4rem; } }
 
 @media screen and (max-width: 820px) {
   .team__card {
@@ -1398,9 +1428,10 @@ img {
   .footer {
     background: #131313; }
     .footer__wrap {
-      padding: 2.5rem 0;
+      padding: 2.5rem 0 0 0;
       max-width: 100%;
-      background-color: #131313; }
+      background-color: #131313;
+      margin-bottom: 1.5rem; }
     .footer__title {
       font-size: 1.65rem;
       margin-bottom: 4.5rem; }
@@ -1418,6 +1449,33 @@ img {
       min-width: 100%;
       min-height: 4.3rem;
       font-size: 1.2rem; }
+    .footer__heading {
+      font-size: 1.5rem;
+      max-width: 26rem; }
+    .footer__contacts-phone {
+      color: #E3B873; }
+    .footer__wrap-map {
+      display: flex;
+      flex-direction: column; }
+    .footer__section-title {
+      order: 2; }
+    .footer__map {
+      margin-bottom: 3.2rem; }
+    .footer__mail-icon {
+      width: 3.5rem;
+      height: 3.5rem;
+      margin-right: 1.5rem; }
+    .footer__instagram-icon {
+      width: 3.5rem;
+      height: 3.5rem; }
+    .footer__image {
+      margin-top: 1.5rem; }
+  #map {
+    height: 21.4rem;
+    width: 100%;
+    order: 1; }
+  .footer__menu {
+    display: none; }
   .team {
     padding-bottom: 14.5rem; }
   .policy__checkbox-footer ~ div.invalid {
@@ -1515,7 +1573,9 @@ img {
       margin-left: 0rem; }
     .team-card__icon {
       left: -3rem;
-      top: -3rem; } }
+      top: -3rem; }
+  .footer__map {
+    max-width: 100%; } }
 
 @media screen and (max-width: 388px) {
   .control__text {

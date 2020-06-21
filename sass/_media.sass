@@ -105,6 +105,9 @@
   .col
     &-30      
       &--small-width
+  .footer
+    &__map    
+      min-height: 21.4rem      
              
            
 @media screen and ( max-width: 820px )
@@ -387,9 +390,10 @@
   .footer
     background: $dark
     &__wrap
-      padding: 2.5rem 0
+      padding: 2.5rem 0 0 0
       max-width: 100%
       background-color: $dark
+      margin-bottom: 1.5rem
     &__title
       font-size: 1.65rem
       margin-bottom: 4.5rem  
@@ -408,6 +412,40 @@
        min-width: 100%
        min-height: 4.3rem
        font-size: 1.2rem 
+    &__heading
+      font-size: 1.5rem
+      max-width: 26rem
+    &__contacts-phone
+      color: $primary
+    &__wrap-map      
+      display: flex
+      flex-direction: column
+    &__section-title
+      order: 2
+    &__map
+      margin-bottom: 3.2rem
+    &__mail-icon
+      width: 3.5rem
+      height: 3.5rem
+      margin-right: 1.5rem            
+    &__instagram-icon
+      width: 3.5rem
+      height: 3.5rem
+    &__image
+      margin-top: 1.5rem   
+  #map
+    height: 21.4rem 
+    width: 100%
+    order: 1
+
+  .footer__menu
+    display: none  
+         
+      
+  
+
+     
+                
 
   .team
     padding-bottom: 14.5rem
@@ -522,6 +560,10 @@
       &__icon
         left: -3rem
         top: -3rem
+  .footer
+    &__map
+      max-width: 100%
+            
          
 
 @media screen and ( max-width: 388px )       
