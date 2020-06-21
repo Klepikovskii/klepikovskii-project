@@ -1,8 +1,17 @@
 .footer
-  background: $dark url('../img/footer-bg.jpg') no-repeat center / cover
-  padding-top: 3rem  
+  background: $dark  url('../img/footer-bg.jpg') no-repeat center / cover
+  padding-top: 3rem
+  &::before    
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%)
+  
   &__wrap
-    background-color: $black
+    background: $black url('../img/bg-lines.svg') no-repeat center/cover
     max-width: 63.07rem
     margin: auto
     margin-top: -20rem
