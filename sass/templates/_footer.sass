@@ -1,14 +1,14 @@
 .footer
+  position: relative
   background: $dark  url('../img/footer-bg.jpg') no-repeat center / cover
   padding-top: 3rem
   &::before    
     content: ''
     position: absolute
-    top: 0
-    left: 0
     width: 100%
     height: 100%
-    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%)
+    top: 0   
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%) 
   
   &__wrap
     background: $black url('../img/bg-lines.svg') no-repeat center/cover
@@ -16,7 +16,8 @@
     margin: auto
     margin-top: -20rem
     margin-bottom: 3.714rem
-    padding: 2.5rem    
+    padding: 2.5rem
+    position: relative    
   &__title
     text-transform: uppercase
     font-family: 'Yeseva One', cursive
@@ -52,5 +53,6 @@
     margin: auto
     padding: 1.285rem 4.785rem
   &__menu
+    position: relative
     background-color: $dark
     padding: 3.5rem 0    
